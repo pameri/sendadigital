@@ -1,0 +1,101 @@
+{% load staticfiles %}
+
+<header class="header  fixed fixed-before  dark clearfix">
+
+
+          <div class="container">
+            <div class="row">
+              <div class="col-md-auto hidden-md-down pl-3">
+                <!-- header-first start -->
+                <!-- ================ -->
+                <div class="header-first clearfix">
+
+                  <!-- logo -->
+                  <div id="logo" class="logo">
+                    <a href="/"><img id="logo_img" src="{% static 'img/senda.png' %} " alt="Senda" height="250" width="200" ></a>
+                  </div>
+
+                  <!-- name-and-slogan -->
+                  <div class="site-slogan">
+                    Especialista en Facturacion Electronica 
+                  </div>
+
+                </div>
+                <!-- header-first end -->
+
+              </div>
+              <div class="col-lg-8 col-xl-9">
+
+                <!-- header-second start -->
+                <!-- ================ -->
+                <div class="header-second clearfix">
+                  
+                <!-- main-navigation start -->
+                <!-- classes: -->
+                <!-- "onclick": Makes the dropdowns open on click, this the default bootstrap behavior e.g. class="main-navigation onclick" -->
+                <!-- "animated": Enables animations on dropdowns opening e.g. class="main-navigation animated" -->
+                <!-- ================ -->
+                <div class="main-navigation  animated">
+                  <nav class="navbar navbar-toggleable-md navbar-light p-0">                 
+                    
+                    
+                    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-collapse-1" aria-controls="navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-brand clearfix hidden-lg-up">
+
+                      <!-- logo -->
+                      <div id="logo-mobile" class="logo">
+                        <a href="{% url 'main:home' %}"><img id="logo-img-mobile" src="{% static 'img/senda.png' %}" alt="Senda" height="250" width="200" ></a>
+                      </div>
+
+                      <!-- name-and-slogan -->
+                      <div class="site-slogan">
+                        Especialista en Facturacion Electronica 
+                      </div>
+
+                    </div>
+
+                    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                      <!-- main-menu -->
+                      <ul class="navbar-nav ml-xl-auto">
+
+                        <!-- mega-menu start -->                        
+                         <li class="nav-item   mega-menu mega-menu--wide"> 
+                          <a href="{% url 'main:home' %}" class="nav-link" id="first-dropdown" aria-haspopup="true" aria-expanded="false">Facturacion Electronica CLOUD</a>          
+                        </li>
+                        <li class="nav-item   mega-menu mega-menu--wide"> 
+                          <a href="{% url 'main:solicitud' %}" class="nav-link" id="first-dropdown" aria-haspopup="true" aria-expanded="false">
+                            Certificado Digital Facturacion Electronica
+                          </a>          
+                        </li>
+                       
+                        <li class="nav-item   mega-menu mega-menu--wide">
+                          <a href="{% url 'main:solicitud' %}" class="nav-link " id="first-dropdown" aria-haspopup="true" aria-expanded="false">Certificado SSL</a>          
+                        </li>
+                        <li class="nav-item   mega-menu mega-menu--wide">
+                          <a href="index.html" class="nav-link " id="first-dropdown" aria-haspopup="true" aria-expanded="false">Certificado Email</a>          
+                        </li>
+                        <li class="nav-item   mega-menu mega-menu--wide">
+                          <a href="index.html" class="nav-link " id="first-dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>          
+                        </li>
+                        <li>
+                          <a href="index.html" class="nav-link " id="first-dropdown" aria-haspopup="true" aria-expanded="false">Clientes</a>          
+                        </li>                        
+                        <li>
+                          <a href="index.html" class="nav-link " id="first-dropdown" aria-haspopup="true" aria-expanded="false">Contacto</a>          
+                        </li>
+                      </ul>
+                      <!-- main-menu end -->
+                    </div>
+                  </nav>
+                </div>
+                <!-- main-navigation end -->
+                </div>
+                <!-- header-second end -->
+
+              </div>
+          
+            </div>
+          </div>
+        </header>

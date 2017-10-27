@@ -1,0 +1,6 @@
+eclipse.preferences.version=1
+encoding//apps/main/apps.py=utf-8
+encoding//apps/main/models.py=utf-8
+encoding//apps/main/views.py=utf-8
+encoding//apps/users/models.py=utf-8
+encoding//apps/users/views.py=utf-8
